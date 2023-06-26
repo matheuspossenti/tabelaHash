@@ -37,7 +37,7 @@ Com a função de hash definida, foi necessário implementar a estrutura da tabe
 
 ### Tratamento de colisões
 
-O tratamento de colisão foi implementado através do encadeamento separado. Quando ocorre uma colisão, ou seja, quando dois elementos são mapeados para a mesma posição da tabela, os elementos são inseridos sequencialmente na lista encadeada correspondente àquela posição. Dessa forma, é possível armazenar múltiplos elementos na mesma posição sem perder informações.
+O tratamento de colisão foi implementado através do encadeamento separado. Quando ocorre uma colisão, ou seja, quando dois elementos são mapeados para a mesma posição da tabela, os elementos são inseridos sequencialmente na lista duplamente encadeada correspondente àquela posição. Dessa forma, é possível armazenar múltiplos elementos na mesma posição sem perder informações.
 
 
 ### Análise da Tabela Hash
