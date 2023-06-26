@@ -30,7 +30,7 @@ int pesquisaNome(Tabela *tabela, char *dado);
 
 // Prototipação Quicksort
 void swap(Elemento *A, Elemento *B);
-Elemento* meioLista(Elemento *left, Elemento *pivo);
+Elemento* particiona(Lista *lista, Elemento *left, Elemento *pivo);
 void quickSort(Lista *lista, Elemento *left, Elemento *right, int i);
 
 // Alocação de memoria da tabela
@@ -293,7 +293,7 @@ void swap(Elemento *A, Elemento *B)
 	strcpy(B->dado, temp);
 }
 
-Elemento *particiona(Elemento *left, Elemento *right, Elemento *pivo)
+Elemento *particiona(Lista *lista, Elemento *left, Elemento *pivo)
 {
 	Elemento *aux = left->prev;
 
@@ -332,7 +332,7 @@ void quickSort(Lista *lista, Elemento *left, Elemento *right, int i)
 {
 	if (right != NULL && left != NULL && left != right && left != right->next)
 	{
-		Elemento *pivo = meioLista(left, right);
+		Elemento *pivo = particiona(lista, left, right);
 
 		quickSort(lista, left, pivo->prev, i + 1);
 		quickSort(lista, pivo->next, right, i + 1);
