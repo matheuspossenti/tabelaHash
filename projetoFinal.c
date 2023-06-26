@@ -293,7 +293,7 @@ void swap(Elemento *A, Elemento *B)
 	strcpy(B->dado, temp);
 }
 
-Elemento *meioLista(Elemento *left, Elemento *right, Elemento *pivo)
+Elemento *particiona(Elemento *left, Elemento *right, Elemento *pivo)
 {
 	Elemento *aux = left->prev;
 
