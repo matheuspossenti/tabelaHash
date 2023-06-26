@@ -51,8 +51,6 @@ O histograma de frequência permite visualizar a distribuição dos elementos pe
 
 ### Conclusão
 
-Conclusão
-
 A metodologia utilizada para implementar a tabela hash com tratamento de colisão envolveu a escolha da função de hash, a implementação da estrutura da tabela com lista encadeada dupla e o tratamento de colisão através do encadeamento. A análise da tabela foi realizada através do histograma de frequência, que permitiu avaliar a distribuição dos elementos. Com base na análise do histograma, podemos concluir que a hipótese do hashing uniforme foi alcançada, uma vez que a distribuição dos elementos foi uniforme nas posições da tabela hash.
 
 Essa metodologia permitiu a implementação de uma tabela hash eficiente, com tratamento de colisão adequado. No entanto, é importante ressaltar que a escolha da função de hash, o tamanho da tabela e a estratégia de tratamento de colisão podem variar dependendo das características dos dados e dos requisitos específicos do problema.
